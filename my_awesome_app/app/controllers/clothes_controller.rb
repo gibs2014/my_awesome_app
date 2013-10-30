@@ -5,4 +5,7 @@ class ClothesController < ApplicationController
     def input
     end
 
+    def outfits
+    end
+
 end
