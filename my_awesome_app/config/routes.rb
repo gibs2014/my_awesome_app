@@ -9,5 +9,6 @@ get '/clothes' => 'clothes#input', as: 'input'
 # get "/outfits",{:controller =>"clothes", :action =>"form", as: 'form'
 get '/outfits' => 'clothes#form', as: 'form'
 
+get("/new_clothing_form", {:controller =>"clothes", :action =>"new"})
 
 end
