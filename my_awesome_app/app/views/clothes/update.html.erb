@@ -1,0 +1,11 @@
+<!-- /update_item/:id -->
+
+<h1>Your clothing item has been updated</h1>
+
+<h3>Updated clothing item ID#<%=params[:id]%></h3>
+
+<img width="200"src ="<%= @updated_item.image_url%>">
+
+<p><%= @updated_item.name %></p>
+
+<p><a href="http://localhost:3000/all_clothing">To return to the full list click here</a></p>

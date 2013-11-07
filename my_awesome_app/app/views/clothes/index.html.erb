@@ -1,0 +1,12 @@
+<!-- all_clothing -->
+
+<h1>All Clothing</h1>
+
+<ul>
+    <% @list_of_clothes.each do |item| %>
+    <li>
+        <img width="200" src="<%=item.image_url%>">
+        <a href="http://localhost:3000/picture_details/<%= pic.id %>"><%=pic.caption%></a>
+        </li>
+    <% end %>
+</ul>

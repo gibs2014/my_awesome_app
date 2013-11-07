@@ -1,0 +1,65 @@
+<!-- edit_clothing_form/:id -->
+
+<h1>This is where you edit your clothing items</h1>
+
+<p>You are editing clothing id #<%=params[:id]%></p>
+
+<form action="http://localhost:3000/update_clothing/<%=params[:id]%>">
+
+
+<h3>Basic Item Attributes</h3>
+
+  <div>
+    <label for="name">name:</label>
+    <input id="name" type="text" name="name" value="<%=@item_to_edit.name%>">
+  </div>
+
+  <div>
+    <label for="category">Category:</label>
+    <input id="category" type="text" name="category" value="<%=@item_to_edit.category%>">
+  </div>
+
+  <div>
+    <label for="size">Size:</label>
+    <input id="size" type="integer" name="size" value="<%=@item_to_edit.size%>">
+  </div>
+
+<div>
+    <label for="colour">Colour:</label>
+    <input id="colour" type="text" name = "colour" value="<%=@item_to_edit.colour%>">
+</div>
+
+<div>
+    <label for="brand">Brand:</label>
+    <input id="brand" type="text" name="brand" value="<%=@item_to_edit.brand%>">
+</div>
+
+<div>
+    <label for="price">Price:</label>
+    <input id="price" type="integer" name="price" value="<%=@item_to_edit.price%>">
+</div>
+
+<h3>Extra Item Attributes</h3>
+
+<div>
+    <label for="flattering_for">Flattering for:</label>
+    <input id="flattering_for" type="text" name="flattering_for" value="<%=@item_to_edit.flattering_for%>">
+</div>
+
+<div>
+    <label for="extra_support">Extra Support?:</label>
+    <input id="extra_support" type="text" name="extra_support" value="<%=@item_to_edit.extra_support%>">
+</div>
+
+<h3>Item Picture</h3>
+
+<div>
+    <label for="image_url">Image URL:</label>
+    <input id="image_url" type="text" name="image" value="<%=@item_to_edit.image_url%>">
+</div>
+
+
+  <div>
+    <input type="submit" value="Update Item">
+  </div>
+</form>

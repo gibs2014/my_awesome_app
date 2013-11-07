@@ -1,0 +1,10 @@
+<!-- /clothing_details/:id -->
+
+<h1>This is <%= @item.name %></h1>
+
+<img width="200"src ="<%= @item.image_url%>">
+
+<p><a href="http://localhost:3000/edit_clothing_form/<%= @item.id %>">Edit this item</a></p>
+
+<p><a href="http://localhost:3000/delete_item/<%= @item.id %>">Delete this item</a></p>
+
